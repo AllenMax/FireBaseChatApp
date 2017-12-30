@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lecture_title_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="Lecture Title"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lecture_sub_title_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lecture_title_lbl"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Lecture Sub Title"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lecture_sub_title_lbl"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_play_circle_outline_black_36dp"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/lecture_favorite_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lecture_sub_title_lbl"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageView2"
+        android:src="@mipmap/ic_star"
+        android:tint="@android:color/white"/>
+
+    <!--
+    <ImageView
+        android:id="@+id/lecture_time_im"
+        android:layout_width="25dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/lecture_sub_title_lbl"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/lecture_favorite_im"
+        android:src="@mipmap/ic_time"
+        android:tint="@android:color/white"/>
+    -->
+
+</RelativeLayout>

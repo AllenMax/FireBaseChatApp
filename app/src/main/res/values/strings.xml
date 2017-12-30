@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FireBase ChatApp</string>
+    <string name="need_a_new_account">Need a New Account ?</string>
+    <string name="display_name">Display Name</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="password">Password (Min 6 Char)</string>
+    <string name="log_out">Log Out</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="your_email">Your Email</string>
+    <string name="login">Login</string>
+    <string name="welcome_to_lapit_n_chat_app">Welcome to Lapit   Chat App</string>
+    <string name="already_have_account">Already have Account</string>
+    <string name="last_seen">Last Seen</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="trial">Trial</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_requests_page">Welcome to Requests Page</string>
+    <string name="welcome_to_chats_page">Welcome to Chats Page</string>
+    <string name="welcome_to_friends_page">Welcome to Friends Page</string>
+    <string name="hi_there_i_m_using_a_chat_app">Hi there, I\'m using A Chat App</string>
+    <string name="change_image">Change Image</string>
+    <string name="change_status">Change Status</string>
+    <string name="add_status">Add Status</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="user_status">User Status</string>
+    <string name="send_friend_request">Send Friend Request</string>
+    <string name="total_friends">Total Friends</string>
+    <string name="quick_start">Quick Start</string>
+    <string name="timer">Timer</string>
+    <string name="recording_title">Recording Title</string>
+    <string name="recording_sub_title">Recording sub Title</string>
+    <string name="title">Title</string>
+    <string name="sub_title">Sub Title</string>
+
+
+</resources>

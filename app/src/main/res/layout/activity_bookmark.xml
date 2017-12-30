@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <!--android:layout_alignBaseline="@+id/playButton"
+    android:layout_alignBaseline="@+id/pauseButton"-->
+
+    <include
+        android:id="@+id/bookmark_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:id="@+id/startTimerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/soundseekBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/endTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/soundseekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+    <SeekBar
+        android:id="@+id/soundseekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookmark_toolbar"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:id="@+id/im_mp_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soundseekBar"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_play"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/im_mp_replay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soundseekBar"
+        android:layout_toStartOf="@+id/im_mp_play"
+        android:src="@mipmap/ic_replay_5sec"
+        android:tint="@android:color/white" />
+
+    <!--android:tint="@color/colorSecondaryLight"-->
+
+    <ImageView
+        android:id="@+id/im_mp_skip_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soundseekBar"
+        android:layout_toStartOf="@+id/im_mp_replay5"
+        android:src="@mipmap/ic_skip_previous"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/im_mp_forward5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soundseekBar"
+        android:layout_toEndOf="@+id/im_mp_play"
+        android:src="@mipmap/ic_forward_5sec"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/im_mp_skip_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_mp_forward5"
+        android:layout_toEndOf="@+id/im_mp_forward5"
+        android:src="@mipmap/ic_skip_next"
+        android:tint="@android:color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_bookmark_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/im_mp_play"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/white" />
+
+</RelativeLayout>
+
+
+    <!--
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_bookmark_list"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignStart="@+id/playButton"
+            android:layout_below="@+id/playButton"
+            android:layout_marginTop="55dp" />
+    -->

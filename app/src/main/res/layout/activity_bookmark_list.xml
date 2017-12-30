@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_bookmark_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_play_arrow"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/bookmark_title_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/play_arrow"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Bookmark Title"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/bookmark_sub_title_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookmark_title_lbl"
+        android:layout_toEndOf="@+id/play_arrow"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/timer"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/bookmark_note_lbl"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookmark_sub_title_lbl"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/play_arrow"
+        android:text="Note"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/bookmark_favorite_im"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/bookmark_sub_title_lbl"
+        android:layout_toStartOf="@+id/bookmark_note_lbl"
+        android:src="@mipmap/ic_star"
+        android:tint="@android:color/white" />
+
+
+    <!--
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/play_arrow"
+        android:src="@mipmap/ic_flag"/>
+
+    <ImageView
+        android:id="@+id/im_item_bookmark_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_play_circle_outline_black_36dp"
+        android:tint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/lbl_item_bookmark_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_item_bookmark_icon"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="48dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:layout_marginTop="18dp"
+        android:text="Bookmark Title"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lbl_item_bookmark_time_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_item_bookmark_text"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="48dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:text="Time"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/lbl_item_bookmark_notes_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_item_bookmark_time_text"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="48dp"
+        android:fontFamily="sans-serif"
+        android:text="Time"
+        android:layout_marginBottom="5dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    -->
+
+</RelativeLayout>
